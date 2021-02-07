@@ -1,0 +1,43 @@
+﻿@model KutuphaneKayit.Models.tblkayit
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UyeEkle</title>
+    <link href="~/StyleSheet1.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+        <div>Library<span>Save</span></div>
+    </div>
+    <br>
+    <div class="login">
+        <form method="post">
+            <input type="text" placeholder="Name" name="Name" required=""><br>
+            <input type="text" placeholder="Mail" name="Mail" required=""><br>
+            <input type="text" placeholder="Telephone" name="Telephone" required=""><br>
+            <input type="text" placeholder="School" name="School" required=""><br>
+            <input type="password" placeholder="Password" name="Password" required=""><br>
+            <button class="btn btn-primary">Save</button>
+        </form>
+       
+          
+       
+        <div>
+            @ViewBag.Message
+
+        </div>
+    </div>
+</body>
+
+</html>
